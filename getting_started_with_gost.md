@@ -1,5 +1,9 @@
 # Getting started with GOST
 
+## Introduction
+
+todo: intro
+
 ## Installation
 
 todo: describe installation
