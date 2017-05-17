@@ -6,8 +6,6 @@ In this page installation of GOST is described using Docker.
 
 ## Prerequisites
 
-1] Docker 
-
 Verify that Docker is installed:
 
 ```
