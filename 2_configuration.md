@@ -4,6 +4,15 @@
 
 Now that GOST is installed let's configure GOST with some metadata about our sensors.
 
+## Prerequisites
+
+- Postman
+
+Verify that Postman is installed. If not, download it from https://www.getpostman.com/
+
+If installed, open the file 'SensorThings API v1.0.postman_collection.json'
+
+
 ## Create datastream
 
 Use the Postman file to send the following requests:
