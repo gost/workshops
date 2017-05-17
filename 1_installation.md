@@ -9,7 +9,7 @@ In this page installation of GOST is described using Docker.
 Verify that Docker is installed:
 
 ```
-$ docker version
+$ docker --version
 Docker version 17.05.0-ce, build 89658be
 $ docker-compose --version
 docker-compose version 1.13.0, build 1719ceb
