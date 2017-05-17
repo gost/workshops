@@ -4,3 +4,5 @@
 
 2] <a href = "2_configuration.md">GOST configuration</a> 
 
+3] <a href = "3_configure_nodered.md">Configure Node_RED</a>
+
