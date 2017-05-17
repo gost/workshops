@@ -6,8 +6,6 @@ In this page installation of GOST is described using Docker.
 
 ## Prerequisites
 
-- Docker 
-
 Verify that Docker is installed:
 
 ```
@@ -16,12 +14,6 @@ Docker version 17.05.0-ce, build 89658be
 $ docker-compose --version
 docker-compose version 1.13.0, build 1719ceb
 ```
-
-- Postman
-
-Verify that Postman is installed. If not, download it from https://www.getpostman.com/
-
-If installed, open the file 'SensorThings API v1.0.postman_collection.json'
 
 If Docker is missing, install it for <a href="https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac">Mac</a> or <A href="https://docs.docker.com/docker-for-windows/install/">Windows</a>
 
