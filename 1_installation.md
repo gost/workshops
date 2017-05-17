@@ -1,4 +1,4 @@
-# GOST installation
+# 1) GOST installation
 
 # Introduction
 
