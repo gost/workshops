@@ -36,7 +36,7 @@ Open a browser and test the following addresses:
 
 - http://localhost:1880 : should run Node-RED
 
-Continue to < a href="2_configuration.md">2) GOST Configuration</a>
+Continue to <a href="2_configuration.md">2) GOST Configuration</a>
 
 
 
