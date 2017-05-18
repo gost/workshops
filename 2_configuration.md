@@ -30,6 +30,8 @@ Use the Postman file to send the following requests:
 
 - Step 5: Create an Observation
 
+Note: In step 1, 2, 3 make a note of the iot.id created, you'll need these id's in step 4 and 5 to replace 'id_of_the_entity_you_just_created' parameter.
+
 ## Testing
 
 Open http://localhost:8080 and browse through the various entities
