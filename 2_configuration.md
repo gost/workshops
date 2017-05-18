@@ -12,8 +12,11 @@ Verify that Postman is installed. If not, download it from https://www.getpostma
 
 If installed, open the file 'SensorThings API v1.0.postman_collection.json'
 
+After import, Postman should look like:
 
-## Create datastream
+<img src = "images/postman.png">
+
+## Create items
 
 Use the Postman file to send the following requests:
 
@@ -25,7 +28,7 @@ Use the Postman file to send the following requests:
 
 - Step 4: Create a Datastream 
 
-- Step 5: Create an observation
+- Step 5: Create an Observation
 
 ## Testing
 
