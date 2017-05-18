@@ -22,7 +22,7 @@ If Docker is missing, install it for <a href="https://docs.docker.com/docker-for
 Installation if GOST is easy: download the docker-compose file and run it.
 
 ```
-$ wget https://raw.githubusercontent.com/Geodan/gost/master/src/docker-compose.yml
+$ wget https://raw.githubusercontent.com/gost/docker-compose/master/docker-compose.yml
 $ docker-compose up
 ```
 
