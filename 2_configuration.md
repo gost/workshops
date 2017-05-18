@@ -10,7 +10,7 @@ Now that GOST is installed let's configure GOST with some metadata about our sen
 
 Verify that Postman is installed. If not, download it from https://www.getpostman.com/
 
-If installed, import the file 'SensorThings API v1.0.postman_collection.json' from this workshop repository.
+If installed, import the file <a href="SensorThings API v1.0.postman_collection.json">SensorThings API v1.0.postman_collection.json</a> from this workshop repository.
 
 After import, Postman should look like:
 
