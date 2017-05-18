@@ -36,5 +36,7 @@ Note: In step 1, 2, 3 make a note of the iot.id created, you'll need these id's 
 
 Open http://localhost:8080 and browse through the various entities
 
+<img src = "images/dashboard.png"/>
+
 Continue to <a href = "3_configure_nodered.md">3) Configure Node-RED</a>
 
