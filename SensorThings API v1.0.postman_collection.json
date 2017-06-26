@@ -73,7 +73,7 @@
 			"description": "* Step 5: CREATE new Observations\nFinally, we have established all the required \"metadata\" for the observations. Now we can upload many many observations to the system.\n\\n",
 			"collectionId": "99a4268d-72ce-deb3-b376-502e9c61d7c9",
 			"responses": [],
-			"rawModeData": "{\n  \"result\": 1,\n  \"Datastream\": {\n    \"id\": <id_of_the_Datastream_you_just_created>\n  }\n}"
+			"rawModeData": "{\n  \"result\": 1,\n  \"Datastream\": {\n    \"@iot.id\": <id_of_the_Datastream_you_just_created>\n  }\n}"
 		},
 		{
 			"id": "902c6191-f311-83a8-f083-d1a2402ebf5b",
