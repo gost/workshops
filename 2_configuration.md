@@ -38,5 +38,5 @@ Open http://localhost:8080 and browse through the various entities
 
 <img src = "images/dashboard.png"/>
 
-Continue to <a href = "3_configure_nodered.md">3) MQTT</a>
+Continue to <a href = "3_mqtt.md">3) GOST and MQTT</a>
 
