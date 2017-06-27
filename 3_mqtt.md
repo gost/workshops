@@ -23,6 +23,8 @@ Step 3: In Postman, execute step 5 (Create an Observation) from the previous exe
 
 On the panel on the right, MQTT.fx should receive the new observation.
 
+<img src = "images/mqtt_subscribe.png"/>
+
 ## MQTT Subscribe and MQTT Publish
 
 Its also possible to create an Observation using MQTT.
@@ -38,5 +40,7 @@ With the following observation in the body: {"result" : 38}
 Hit button 'Publish'
 
 On the panel on the right in the Subscribe page, MQTT.fx should receive the new observation.
+
+<img src = "images/mqtt_publish.png"/>
 
 Continue to <a href = "4_nodered.md">4) Node-RED</a>
