@@ -34,7 +34,7 @@ Open a browser and test the following addresses:
 
 - http://localhost:8080/v1.0: should run the GOST endpoint
 
-- http://localhost:1880 : should run Node-RED
+- http://localhost:1880 : should run Node-RED user interface
 
 Continue to <a href="2_configuration.md">2) GOST Configuration</a>
 
