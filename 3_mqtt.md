@@ -33,7 +33,7 @@ Step 2: In tab page 'Subscribe', subscribe to topic 'Datastreams(1)/Observations
 
 Step 3: In tab page 'Publish', publish to topic 'GOST/Datastreams(1)/Observations'
 
-With the following obervation in the body: {"result" : 38}
+With the following observation in the body: {"result" : 38}
 
 Hit button 'Publish'
 
