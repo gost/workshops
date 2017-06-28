@@ -37,6 +37,8 @@ Step 3: In tab page 'Publish', publish to topic 'GOST/Datastreams(1)/Observation
 
 With the following observation in the body: {"result" : 38}
 
+The prefix 'GOST' is needed to let the server know to persist the data.
+
 Hit button 'Publish'
 
 On the panel on the right in the Subscribe page, MQTT.fx should receive the new observation.
