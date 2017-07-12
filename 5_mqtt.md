@@ -1,4 +1,4 @@
-# 3] GOST and MQTT
+# 5] GOST and MQTT
 
 ## Introduction
 
@@ -45,4 +45,4 @@ On the panel on the right in the Subscribe page, MQTT.fx should receive the new 
 
 <img src = "images/mqtt_publish.png"/>
 
-Continue to <a href = "4_nodered.md">4) Node-RED</a>
+Continue to <a href = "6_filtering.md">6) Filtering</a>
