@@ -77,7 +77,7 @@ When the model is finished, click the 'Deploy' button (upper right) and run the 
 
 If all goes well, new observations are created in GOST. Inspect http://localhost:8080/v1.0/Observations to check it.
 
-Continue to <a href = "5_MQTT.md">5) GOST and MQTT</a>
+Continue to <a href = "5_mqtt.md">5) GOST and MQTT</a>
 
 
 
