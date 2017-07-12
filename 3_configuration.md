@@ -18,11 +18,7 @@ In Postman, click the 'Import' button, click Import from link, edit the url 'htt
 
 After import, Postman should look like:
 
-<img src = "images/postman.png">Containers: 250
- Running: 0
- Paused: 0
- Stopped: 250
-Images: 1062
+<img src = "images/postman.png">
 
 ## Create items
 
