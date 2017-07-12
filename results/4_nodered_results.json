@@ -1,0 +1,88 @@
+[
+    {
+        "id": "907dbd12.80fb9",
+        "type": "tab",
+        "label": "Flow 1"
+    },
+    {
+        "id": "ae0cc2bb.06489",
+        "type": "inject",
+        "z": "907dbd12.80fb9",
+        "name": "1. Start",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 95.10002899169922,
+        "y": 73.80000305175781,
+        "wires": [
+            [
+                "29711c98.8911e4"
+            ]
+        ]
+    },
+    {
+        "id": "29711c98.8911e4",
+        "type": "http request",
+        "z": "907dbd12.80fb9",
+        "name": "2. Request bikes information",
+        "method": "GET",
+        "ret": "obj",
+        "url": "https://gbfs.thehubway.com/gbfs/en/station_status.json",
+        "tls": "",
+        "x": 252.10000610351562,
+        "y": 175.40002632141113,
+        "wires": [
+            [
+                "ea7c74da.1d7ad8"
+            ]
+        ]
+    },
+    {
+        "id": "ea7c74da.1d7ad8",
+        "type": "function",
+        "z": "907dbd12.80fb9",
+        "name": "3. Get available bikes of first station",
+        "func": "var bikes_available = msg.payload.data.stations[0].num_bikes_available;\nvar newMessage =  { payload: {  \"result\": bikes_available, \"Datastream\": {\n    \"@iot.id\": 1\n  } } \n};\nnewMessage.headers = {\n         \"Content-type\" : \"application/json\"\n    \n}\nreturn newMessage;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 409,
+        "y": 266.00000381469727,
+        "wires": [
+            [
+                "be51dd77.27c6c"
+            ]
+        ]
+    },
+    {
+        "id": "be51dd77.27c6c",
+        "type": "http request",
+        "z": "907dbd12.80fb9",
+        "name": "4. Post observation to GOST",
+        "method": "POST",
+        "ret": "obj",
+        "url": "http://dashboard:8080/v1.0/Observations",
+        "tls": "",
+        "x": 530.0000076293945,
+        "y": 353.0000047683716,
+        "wires": [
+            [
+                "ffe64cd7.3278"
+            ]
+        ]
+    },
+    {
+        "id": "ffe64cd7.3278",
+        "type": "debug",
+        "z": "907dbd12.80fb9",
+        "name": "5. Print response",
+        "active": true,
+        "console": "false",
+        "complete": "payload",
+        "x": 643.0000076293945,
+        "y": 456.0000057220459,
+        "wires": []
+    }
+]
