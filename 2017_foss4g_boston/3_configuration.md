@@ -12,7 +12,7 @@ Verify that Postman is installed. If not, download it from https://www.getpostma
 
 If installed, import the file <a href="SensorThings API v1.0.postman_collection.json">SensorThings API v1.0.postman_collection.json</a> from this workshop repository.
 
-In Postman, click the 'Import' button, click Import from link, edit the url 'https://raw.githubusercontent.com/gost/workshops/master/2017_foss4g_boston/SensorThings%20API%20v1.0.postman_collection.json' and press 'Import'
+In Postman, click the 'Import' button, click Import from link, using url 'https://raw.githubusercontent.com/gost/workshops/master/2017_foss4g_boston/SensorThings%20API%20v1.0.postman_collection.json' and press 'Import'
 
 <img src = "images/postman_import.png">
 
