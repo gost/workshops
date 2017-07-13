@@ -83,9 +83,12 @@ Note: The prefix 'GOST' is needed when publishing to let the server know to pers
 
 Deploy the flow and there should be two green connected MQTT nodes: one for publish, one for subscribe.
 
-Now run the Publish to MQTT flow, and inspect the debug output window. There should be 1 observation per each time the publsih flow runs.
+Now run the Publish to MQTT flow, and inspect the debug output window. There should be 1 observation per each time the publish flow runs.
 
-Bonus exercise: There are other tools/libraries available for working with MQTT.
+## Bonus exercise
+
+There are other tools/libraries available for working with MQTT.
+
 Some well known:
 
 - <a href="http://mqttfx.org/">MQTT.fx</a>
@@ -96,6 +99,6 @@ Some well known:
 
 - <a href="https://eclipse.org/paho/clients/js/">Eclipse Paho Javascript Client</a>
 
-Install some of these tools/frameworks and try to perform the publish/subscribe methods.
+Install some of these tools/frameworks and test the publish/subscribe methods.
 
 Continue to <a href = "6_filtering.md">6) Filtering</a>
