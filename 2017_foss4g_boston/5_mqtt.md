@@ -4,45 +4,98 @@
 
 MQTT (MQ Telemetry Transport or Message Queue Telemetry Transport) is a popular light-weight machine-to-machine protocol based on publish/subscribe mechanism.
 
-In this exercise we'll use the JavaFX based MQTT Client <a href= "http://www.mqttfx.org/">MQTT.fx</a> to explore the usage of GOST and MQTT for publish/subscribe to observations. 
+In this exercise we'll use Node-RED to publish /ubscribe to the GOST MQTT broker.
 
-## Install MQTT.fx
+## Create new flow
 
-Go to <a href= "http://www.mqttfx.org/">MQTT.fx</a> and install MQTT.fx.
+Create a new flow in Node-RED using Options (upper right corner)  -> Flows -> Add
+
+<img src = "images/nodered_add_flow.png">
 
 ## MQTT Subscribe and HTTP POST
 
-First, we subscribe to messages coming from GOST. We'll use Postman to create a new observation just like in the previous
-exercise.
+First, we subscribe to MQTT messages coming from GOST. We'll use the Node-RED flow from the previous exercise to create a new observation.
 
-Step 1: In MQTT.fx, make a connection to broker on 'localhost'
+The MQTT flow will be very simple:
 
-Step 2: In tab page 'Subscribe', subscribe to topic 'Datastreams(1)/Observations'
+<img src="images/nodered_mqtt_flow.png">
 
-Step 3: In Postman, execute step 5 (Create an Observation) from the previous exercise.
 
-On the panel on the right, MQTT.fx should receive the new observation.
+Description of the Nodes:
 
-<img src = "images/mqtt_subscribe.png"/>
+1] MQTT
 
-## MQTT Subscribe and MQTT Publish
+<img src="images/nodered_mqtt.png">
+
+Type of node: Input - MQTT
+
+Server: mosquitto:1883
+
+Topic: Datastreams(1)/Observations
+
+QoS: 2
+
+2] Debug Output
+
+Type of node: Output - debug
+
+If you hit the 'Deploy' button, Node-RED will try to connect to the MQTT broker and display a green button and text 'connected' under the MQTT node if all goes well.
+
+Now run the flow from the previous exercise and inspect the debug panel. 
+
+<img src="images/nodered_mqtt_debug.png">
+
+The debug panel should display two responses with the same information: one from the debug information after running first flow (HTTP Post) and one resulting from the MQTT Subscribe flow.
+
+## MQTT Publish
 
 Its also possible to create an Observation using MQTT.
 
-Step 1: In MQTT.fx, make a connection to broker on 'localhost'
+Extend the MQTT flow with MQTT Publish elements:
 
-Step 2: In tab page 'Subscribe', subscribe to topic 'Datastreams(1)/Observations'
+<img src="images/nodered_mqtt_publish.png">
 
-Step 3: In tab page 'Publish', publish to topic 'GOST/Datastreams(1)/Observations'
+Description of the Nodes:
 
-With the following observation in the body: {"result" : 38}
+1] Start flow
 
-The prefix 'GOST' is needed to let the server know to persist the data.
+Type of node: Input - Inject
 
-Hit button 'Publish'
+<img src= "images/nodered_start.png">
 
-On the panel on the right in the Subscribe page, MQTT.fx should receive the new observation.
+2] Create observation
 
-<img src = "images/mqtt_publish.png"/>
+Type of node: Function - Function
+
+Function: var newMessage =  { payload: {  "result": 38 }};return newMessage;
+
+<img src= "images/nodered_mqtt_create_observation.png">
+
+3] Publish to GOST MQTT Broker
+
+Type of node: Output - MQTT
+
+Topic: GOST/Datastreams(1)/Observations
+
+Note: The prefix 'GOST' is needed when publishing to let the server know to persist the data.
+
+<img src="images/nodered_mqtt_publish_node.png">
+
+Deploy the flow and there should be two green connected MQTT nodes: one for publish, one for subscribe.
+
+Now run the Publish to MQTT flow, and inspect the debug output window. There should be 1 observation per each time the publsih flow runs.
+
+Bonus exercise: There are other tools/libraries available for working with MQTT.
+Some well known:
+
+- <a href="http://mqttfx.org/">MQTT.fx</a>
+
+- <a href="https://mosquitto.org/">Mosquitto</a>
+
+- <a href="https://eclipse.org/paho/clients/java/">Eclipse Paho Java Client</a>
+
+- <a href="https://eclipse.org/paho/clients/js/">Eclipse Paho Javascript Client</a>
+
+Install some of these tools/frameworks and try to perform the publish/subscribe methods.
 
 Continue to <a href = "6_filtering.md">6) Filtering</a>

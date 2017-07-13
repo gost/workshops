@@ -1,0 +1,96 @@
+[
+    {
+        "id": "15eb65f6.68774a",
+        "type": "debug",
+        "z": "7bfd79ef.c6a3b8",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 560.0061187744141,
+        "y": 225.17705726623535,
+        "wires": []
+    },
+    {
+        "id": "2b78b998.d19646",
+        "type": "mqtt in",
+        "z": "7bfd79ef.c6a3b8",
+        "name": "Subscribe to GOST MQTT broker",
+        "topic": "Datastreams(1)/Observations",
+        "qos": "2",
+        "broker": "86740f2a.473c9",
+        "x": 223.7499542236328,
+        "y": 226.60412406921387,
+        "wires": [
+            [
+                "15eb65f6.68774a"
+            ]
+        ]
+    },
+    {
+        "id": "93f82648.13bf98",
+        "type": "inject",
+        "z": "7bfd79ef.c6a3b8",
+        "name": "",
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 163.74998664855957,
+        "y": 371.9791011810303,
+        "wires": [
+            [
+                "b0398f9c.9881b"
+            ]
+        ]
+    },
+    {
+        "id": "b3309ea9.d709a",
+        "type": "mqtt out",
+        "z": "7bfd79ef.c6a3b8",
+        "name": "Publish to GOST MQTT Broker",
+        "topic": "GOST/Datastreams(1)/Observations",
+        "qos": "",
+        "retain": "",
+        "broker": "86740f2a.473c9",
+        "x": 682.0936508178711,
+        "y": 369.68218994140625,
+        "wires": []
+    },
+    {
+        "id": "b0398f9c.9881b",
+        "type": "function",
+        "z": "7bfd79ef.c6a3b8",
+        "name": "Create observation",
+        "func": "var newMessage =  { payload: {  \"result\": 38 }};\nreturn newMessage;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 387.92704010009766,
+        "y": 372.114483833313,
+        "wires": [
+            [
+                "b3309ea9.d709a"
+            ]
+        ]
+    },
+    {
+        "id": "86740f2a.473c9",
+        "type": "mqtt-broker",
+        "z": "",
+        "broker": "mosquitto:1883",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    }
+]

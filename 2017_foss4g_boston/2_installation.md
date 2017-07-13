@@ -61,5 +61,39 @@ Open a browser and test the following addresses:
 
 - http://localhost:1880 : should run Node-RED user interface
 
+## Stopping GOST
+
+If you want to stop GOST press control-c and run 'docker-compose down':
+
+```
+$ docker-compose down
+
+Removing dockercompose_dashboard_1 ... done
+Removing dockercompose_gost_1 ... done
+Removing dockercompose_gost-db_1 ... done
+Removing dockercompose_mosquitto_1 ... done
+Removing dockercompose_node-red_1 ... done
+Removing network dockercompose_default
+```
+
+If you want to remove all presistent data (warning: all GOST data will be removed) and restart clean, add the -v option:
+
+```
+$ docker-compose down -v
+
+Removing network dockercompose_default
+WARNING: Network dockercompose_default not found.
+Removing volume dockercompose_mosquitto_conf
+Removing volume dockercompose_mosquitto_data
+Removing volume dockercompose_nodered
+Removing volume dockercompose_postgis
+```
+
+Use docker-compose up again to restart GOST
+```
+$ docker-compose up
+```
+
+
 Continue to <a href="3_configuration.md">3) GOST Configuration</a>
 
