@@ -101,4 +101,4 @@ Some well known:
 
 Install some of these tools/frameworks and test the publish/subscribe methods.
 
-Continue to <a href = "6_filtering.md">6) Filtering</a>
+Continue to <a href = "6_odata_filtering.md">6) OData Filtering</a>
