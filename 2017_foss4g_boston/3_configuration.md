@@ -24,7 +24,7 @@ After import, Postman should look like:
 
 With Postman, we can easily send HTTP requests to the GOST server. On the left panel, select a request ('Step 1: Post a Thing'), on the right panel press 'Body' and Request body text will show up. After hitting 'Send' button the HTTP Response will be showed below the request.  
 
-Use the Postman file to send the following requests:
+Use the Postman file to send the following requests, be sure to inspect the request and response to see whats going on:
 
 - Step 1: Create a Thing
 
