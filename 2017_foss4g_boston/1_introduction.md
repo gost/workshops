@@ -12,7 +12,7 @@ You will learn things like:
 
 - Using Node-RED to get data into GOST
 
-- Using MQTT with GOST
+- Using MQTT with GOST for Publish/Subscribe
 
 - Using OData filtering capabilities (spatial and non-spatial)
 
