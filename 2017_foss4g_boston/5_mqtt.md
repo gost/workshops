@@ -4,7 +4,7 @@
 
 MQTT (MQ Telemetry Transport or Message Queue Telemetry Transport) is a popular light-weight machine-to-machine protocol based on publish/subscribe mechanism.
 
-In this exercise we'll use Node-RED to publish /ubscribe to the GOST MQTT broker.
+In this exercise we'll use Node-RED to publish/subscribe to the GOST MQTT broker.
 
 ## Create new flow
 
