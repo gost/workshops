@@ -2,7 +2,7 @@
 
 In this workshop, you will learn the basics of working with GOST.
 
-GOST is an OGC compliant implemententation of the <a href= "http://docs.opengeospatial.org/is/15-078r6/15-078r6.html">OGC SensorThings API</a>. 
+GOST is an OGC compliant implementation of the <a href= "http://docs.opengeospatial.org/is/15-078r6/15-078r6.html">OGC SensorThings API</a> written in Golang. 
 
 You will learn things like:
 
