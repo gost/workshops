@@ -16,7 +16,7 @@ In this workshop, you will learn practical things like:
 
 - Using MQTT with GOST for Publish/Subscribe
 
-- Using OData filtering capabilities (spatial and non-spatial)
+- Using OASIS OData filtering capabilities (spatial and non-spatial)
 
 Finally there is a bonus exercise about realtime visualizing Boston bike-sharing information using GOST.
 

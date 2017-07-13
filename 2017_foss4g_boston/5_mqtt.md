@@ -14,7 +14,7 @@ Create a new flow in Node-RED using Options (upper right corner)  -> Flows -> Ad
 
 ## MQTT Subscribe and HTTP POST
 
-First, we subscribe to MQTT messages coming from GOST. We'll use the Node-RED flow from the previous exercise to create a new observation.
+First, we subscribe to MQTT messages coming from GOST. We'll use the Node-RED flow from the previous exercise to create a new observation. A practical use-case is to perform real-time event analysis and tasking in Node-RED when a new observation arrives.
 
 The MQTT flow will be very simple:
 
