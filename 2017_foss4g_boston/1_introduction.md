@@ -4,7 +4,7 @@ In this workshop, you will learn the basics of working with GOST.
 
 GOST is an OGC compliant implementation of the <a href= "http://docs.opengeospatial.org/is/15-078r6/15-078r6.html">OGC SensorThings API</a> written in Golang.
 
-If you need to learn the basics of SensorThings API, please read <a href="https://en.wikipedia.org/wiki/SensorThings_API">SensorThings API on Wikipedia</a>. 
+For more background information of SensorThings API, please read <a href="https://en.wikipedia.org/wiki/SensorThings_API">SensorThings API on Wikipedia</a>. 
 
 In this workshop, you will learn practical things like:
 
