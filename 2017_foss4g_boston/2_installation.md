@@ -33,7 +33,7 @@ If you are unable to install Docker, you can try the free online service <a href
 
 ## Installation
 
-Installation of GOST is easy: download the docker-compose file and run it.
+Installation of GOST is easy: download the docker-compose file and run it with 'docker-compose up'.
 
 Note: The first time the 'docker-compose up' command is executed, a bunch of new Docker images will be downloaded and started 
 so please be patient.
@@ -50,6 +50,19 @@ node-red_1   | 26 Jun 09:49:23 - [info] Started flows
 gost-db_1    | LOG:  database system is ready to accept connections
 mosquitto_1  | 1499082438: New client connected from 172.18.0.5 as gost (c1, k300).
 ```
+
+If you inspect the docker-compose file, you will see the various parts of the installation:
+
+- geodan/gost: contains the GOST service (written in Golang)
+
+- geodan/gost-db: contains the GOST database (based on PostgreSQL + PostGIS)
+
+- geodan/gost-dashboard: contains GOST front-end + proxyserver (based on Nginx)
+
+- nodered/node-red-docker: contains Node-RED
+
+- toke/mosquitto: contains Mosquitto broker for MQTT 
+
 
 ## Testing
 
