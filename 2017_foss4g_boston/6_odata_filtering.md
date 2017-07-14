@@ -32,4 +32,4 @@ Construct and test a query to get all locations in Iceland (-25 63,-25 66,-12 66
 Construct and test a query to get all observations where phenomenonTime is in the future (using now() function)
 
 
-Continue to <a href = "7_bonus_exercise.md">6) Bonus exercise</a>
+Continue to <a href = "7_bonus_exercise.md">7) Bonus exercise</a>
