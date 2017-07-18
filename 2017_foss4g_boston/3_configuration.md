@@ -28,13 +28,25 @@ Use the Postman file to send the following requests, be sure to inspect the requ
 
 - Step 1: Create a Thing
 
+definition: "An object of the physical world (physical things) or the information world (virtual things) that is capable of being identified and integrated into communication networks"
+
 - Step 2: Create an ObservedProperty
+
+definition: "Specifies the phenomenon of an Observation."
 
 - Step 3: Create a Sensor
 
+definition: "An instrument that observes a property or phenomenon with the goal of producing an estimate of the value of the property."
+
 - Step 4: Create a Datastream 
 
+definition: " A collection of Observations and the Observations in a Datastream measure the same ObservedProperty and are produced by the same Sensor."
+
 - Step 5: Create an Observation
+
+deinition: "Act of measuring or otherwise determining the value of a property"
+
+definition: 
 
 Note: In step 1, 2, 3 make a note of the iot.id created, you'll need these id's in step 4 and 5 to replace 'id_of_the_entity_you_just_created' parameter. The first item created will have number 1 by default, so use that in most cases.  
 
