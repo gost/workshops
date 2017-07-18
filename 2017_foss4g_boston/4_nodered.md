@@ -73,7 +73,7 @@ Return: A parsed JSON object
 
 Type of Node: output - debug
 
-<img src= "images/nodered_debug.png">
+<kbd><img src= "images/nodered_debug.png"></kbd>
 
 When the model is finished, click the 'Deploy' button (upper right) and run the model by clicking the 1. Start button. Debug information (GOST response after creating new observation) will be shown in the Debug panel (on the right).
 
