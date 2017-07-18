@@ -33,10 +33,9 @@ If you are unable to install Docker, you can try the free online service <a href
 
 ## Installation
 
-Installation of GOST is easy: download the docker-compose file and run it with 'docker-compose up'.
+Installation of GOST is easy: download the docker-compose.yml file and run it with 'docker-compose up'.
 
-Note: The first time the 'docker-compose up' command is executed, a bunch of new Docker images will be downloaded and started 
-so please be patient.
+Note: The first time the 'docker-compose up' command is executed, a bunch of new Docker images will be downloaded and started so please be patient.
 
 ```
 $ curl https://raw.githubusercontent.com/gost/docker-compose/master/docker-compose.yml > docker-compose.yml
