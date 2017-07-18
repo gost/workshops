@@ -67,7 +67,7 @@ URL: http://dashboard:8080/v1.0/Observations
 
 Return: A parsed JSON object
 
-<img src= "images/nodered_post.png">
+<kbd><img src= "images/nodered_post.png"></kbd>
 
 5] Print response
 
