@@ -22,7 +22,7 @@ Type of Node: Input - Inject
 
 Payload type: boolean
 
-<img src= "images/nodered_start.png">
+<kbd><img src= "images/nodered_start.png"></kbd>
 
 2] Request bikes information
 
@@ -34,7 +34,7 @@ URL: https://gbfs.thehubway.com/gbfs/en/station_status.json
 
 Return: A parsed JSON object
 
-<img src= "images/nodered_bikes.png">
+<kbd><img src= "images/nodered_bikes.png"></kbd>
 
 3] Get available bikes of first station
 
@@ -55,7 +55,7 @@ newMessage.headers = {
 return newMessage;
 ```
 
-<img src= "images/nodered_function.png">
+<kbd><img src= "images/nodered_function.png"></kbd>
 
 4] Post observation to GOST
 
