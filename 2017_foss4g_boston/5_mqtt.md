@@ -10,7 +10,7 @@ In this exercise we'll use Node-RED to publish/subscribe to the GOST MQTT broker
 
 Create a new flow in Node-RED using Options (upper right corner)  -> Flows -> Add
 
-<img src = "images/nodered_add_flow.png">
+<kbd><img src = "images/nodered_add_flow.png"></kbd>
 
 ## MQTT Subscribe and HTTP POST
 
@@ -18,14 +18,14 @@ First, we subscribe to MQTT messages coming from GOST. We'll use the Node-RED fl
 
 The MQTT flow will be very simple:
 
-<img src="images/nodered_mqtt_flow.png">
+<kbd><img src="images/nodered_mqtt_flow.png"></kbd>
 
 
 Description of the Nodes:
 
 1] MQTT
 
-<img src="images/nodered_mqtt.png">
+<kbd><img src="images/nodered_mqtt.png"></kbd>
 
 Type of node: Input - MQTT
 
@@ -43,7 +43,7 @@ If you hit the 'Deploy' button, Node-RED will try to connect to the MQTT broker 
 
 Now run the flow from the previous exercise and inspect the debug panel. 
 
-<img src="images/nodered_mqtt_debug.png">
+<kbd><img src="images/nodered_mqtt_debug.png"></kbd>
 
 The debug panel should display two responses with the same information: one from the debug information after running first flow (HTTP Post) and one resulting from the MQTT Subscribe flow.
 
@@ -53,7 +53,7 @@ Its also possible to create an Observation using MQTT.
 
 Extend the MQTT flow with MQTT Publish elements:
 
-<img src="images/nodered_mqtt_publish.png">
+<kbd><img src="images/nodered_mqtt_publish.png"></kbd>
 
 Description of the Nodes:
 
@@ -61,7 +61,7 @@ Description of the Nodes:
 
 Type of node: Input - Inject
 
-<img src= "images/nodered_start.png">
+<kbd><img src= "images/nodered_start.png"></kbd>
 
 2] Create observation
 
@@ -69,7 +69,7 @@ Type of node: Function - Function
 
 Function: var newMessage =  { payload: {  "result": 38 }};return newMessage;
 
-<img src= "images/nodered_mqtt_create_observation.png">
+<kbd><img src= "images/nodered_mqtt_create_observation.png"></kbd>
 
 3] Publish to GOST MQTT Broker
 
@@ -79,7 +79,7 @@ Topic: GOST/Datastreams(1)/Observations
 
 Note: The prefix 'GOST' is needed when publishing to let the server know to persist the data.
 
-<img src="images/nodered_mqtt_publish_node.png">
+<kbd><img src="images/nodered_mqtt_publish_node.png"></kbd>
 
 Deploy the flow and there should be two green connected MQTT nodes: one for publish, one for subscribe.
 
