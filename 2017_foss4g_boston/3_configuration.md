@@ -14,7 +14,7 @@ If installed, import the file <a href="SensorThings API v1.0.postman_collection.
 
 In Postman, click the 'Import' button, click Import from link, using url 'https://raw.githubusercontent.com/gost/workshops/master/2017_foss4g_boston/SensorThings%20API%20v1.0.postman_collection.json' and press 'Import'
 
-<img src = "images/postman_import.png">
+<kbd><img src = "images/postman_import.png"></kbd>
 
 After import, Postman should look like:
 
