@@ -26,9 +26,11 @@ With Postman, we can easily send HTTP requests to the GOST server. On the left p
 
 Use the Postman file to send the following requests, be sure to inspect the request and response to see whats going on:
 
-- Step 1: Create a Thing
+- Step 1: Create a Thing with Location
 
-definition: "An object of the physical world (physical things) or the information world (virtual things) that is capable of being identified and integrated into communication networks"
+definition Thing: "An object of the physical world (physical things) or the information world (virtual things) that is capable of being identified and integrated into communication networks"
+
+definition Location: "Locates the Thing or the Things it associated with."
 
 - Step 2: Create an ObservedProperty
 
