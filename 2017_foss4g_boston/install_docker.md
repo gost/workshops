@@ -7,6 +7,8 @@
 
 Download from: https://store.docker.com/editions/community/docker-ce-desktop-windows
 
+Warning: Installing Docker for Windows enables Hyper-V, which prevents you from being able to use VMWare or VirtualBox. 
+
 - For Windows 8: Install Docker Toolbox https://www.docker.com/products/docker-toolbox
 
 ## Mac
