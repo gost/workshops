@@ -25,7 +25,7 @@ $ docker-compose --version
 docker-compose version 1.13.0, build 1719ceb
 ```
 
-If Docker is missing, go to <a href="docker_install.md">install_docker</a> for installation instructions.
+If Docker is missing, go to <a href="install_docker.md">install_docker</a> for installation instructions.
 
 If you are unable to install Docker, you can try the free online service <a href="http://labs.play-with-docker.com/">play-with-docker</a>, it gives you free Docker machines for 4 hours.
 
