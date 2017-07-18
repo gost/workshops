@@ -12,6 +12,8 @@ The complete flow will look like this:
 
 Now recreate the flow, insert nodes from the left panel, use double-click to edit properties.
 
+Tip: If you are unable to complete this exercise, you can import (using options -> clipboard) the result flow from https://github.com/gost/workshops/blob/master/2017_foss4g_boston/results/4_nodered_http_results.json
+
 Description of the nodes:
 
 1] Start
