@@ -25,9 +25,7 @@ $ docker-compose --version
 docker-compose version 1.13.0, build 1719ceb
 ```
 
-If Docker is missing, install it for <a href="https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac">Mac</a>, <a href="https://docs.docker.com/docker-for-windows/install/">Windows</a> or <a href="https://runnable.com/docker/install-docker-on-linux">Linux</a>.
-
-Note: If you use VirtualBox on Windows be sure to switch it off https://derekgusoff.wordpress.com/2012/09/05/run-hyper-v-and-virtualbox-on-the-same-machine/
+If Docker is missing, go to <a href="docker_install.md">docker_install</a> for installation instructions.
 
 If you are unable to install Docker, you can try the free online service <a href="http://labs.play-with-docker.com/">play-with-docker</a>, it gives you free Docker machines for 4 hours.
 
