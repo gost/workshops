@@ -1,4 +1,4 @@
-# 2) GOST installation
+# 2] GOST installation
 
 # Introduction
 
