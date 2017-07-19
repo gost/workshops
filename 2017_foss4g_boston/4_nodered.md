@@ -1,4 +1,4 @@
-# 4) GOST and Node-RED
+# 4] GOST and Node-RED
 
 <a href="https://nodered.org/">Node-RED</a> is a popular open source visual tool for wiring the Internet of Things. We can use Node-RED to feed data from sensors into GOST or to process GOST data.
 
