@@ -1,4 +1,4 @@
-# 1) Workshop introduction
+# 1] Workshop introduction
 
 In this workshop, you will learn the basics of working with GOST.
 
