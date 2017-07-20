@@ -58,7 +58,9 @@ Open the dashboard http://localhost:8080 and browse through the various entities
 
 ## Bonus exercise
 
-With the deep insert functions its possible to create multiple entities at once. See <a href="https://github.com/gost/docs/blob/master/gost_deepinsert.md>gost_deepinsert.md</a> for examples. Exercise: Try to create a Datastream in one request.
+With the deep insert functions its possible to create multiple entities at once. See <a href="https://github.com/gost/docs/blob/master/gost_deepinsert.md">gost_deepinsert.md</a> for examples. 
+
+Exercise: Try to create a Datastream in one request.
 
 Continue to <a href = "4_nodered.md">4) GOST and Node-RED</a>
 
