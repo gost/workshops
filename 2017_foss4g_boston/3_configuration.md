@@ -24,7 +24,7 @@ After import, Postman should look like:
 
 With Postman, we can easily send HTTP requests to the GOST server. On the left panel, select a request ('Step 1: Post a Thing'), on the right panel press 'Body' and Request body text will show up. After hitting 'Send' button the HTTP Response will be showed below the request.  
 
-Use the Postman file to send the following requests, be sure to inspect the request and response to see whats going on:
+Use the Postman file to send the following requests, be sure to inspect the request and response to see whats going on. 
 
 - Step 1: Create a Thing with Location
 
@@ -48,7 +48,9 @@ definition Datastream: " A collection of Observations and the Observations in a 
 
 definition Observation: "Act of measuring or otherwise determining the value of a property"
 
-Note: In step 1, 2, 3 make a note of the iot.id created, you'll need these id's in step 4 and 5 to replace 'id_of_the_entity_you_just_created' parameter. The first item created will have number 1 by default, so use that in most cases.  
+Note 1: In step 1, 2, 3 make a note of the iot.id created, you'll need these id's in step 4 and 5 to replace 'id_of_the_entity_you_just_created' parameter. The first item created will have number 1 by default, so use that in most cases.
+
+Note 2: In each response you'll see links to related entities, for example posting a Thing will return @iot.selfLink, Locations@iot.navigationLink, Datastreams@iot.navigationLink and HistoricalLocations@iot.navigationLink. Try these links in browser and inspect the response.
 
 ## Testing
 
