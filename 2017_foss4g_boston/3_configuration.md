@@ -62,7 +62,8 @@ Open the dashboard http://localhost:8080 and browse through the various entities
 
 With the deep insert functions its possible to create multiple entities at once. See <a href="https://github.com/gost/docs/blob/master/gost_deepinsert.md">gost_deepinsert.md</a> for examples. 
 
-Exercise: Try to create a Datastream in one request.
+Exercise: Try to create a Thing with Location and Datastream (with ObservedProperty and Sensor) in one request.
+
 
 Continue to <a href = "4_nodered.md">4) GOST and Node-RED</a>
 
