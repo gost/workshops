@@ -6,7 +6,7 @@ GOST is an OGC compliant implementation of the <a href= "http://docs.opengeospat
 
 For more background information of SensorThings API, please read <a href="https://en.wikipedia.org/wiki/SensorThings_API">SensorThings API on Wikipedia</a>. 
 
-In this workshop, you will learn practical things like:
+You will learn practical things like:
 
 - Installing GOST using Docker
 
