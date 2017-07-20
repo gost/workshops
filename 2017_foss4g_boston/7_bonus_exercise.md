@@ -18,7 +18,7 @@ observations per bike station.
 
 3] Visualize in Map
 
-Create a map (OpenLayers or Leaflet) with real-time bike station information connecting to the GOST MQTT broker.
+Create a map (OpenLayers or Leaflet) with real-time bike station information.
 
 
 
