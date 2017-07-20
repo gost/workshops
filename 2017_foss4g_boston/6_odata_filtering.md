@@ -3,7 +3,7 @@
 For querying the SensorThings API adheres to the <a href="http://www.odata.org/documentation/">OASIS OData 4.0 standard</a>. In this exercise
 we will explore the various OData options.
 
-The document <a href="https://github.com/gost/docs/blob/master/gost_filtering.md">gost_filtering.md</a> contains a list of sample filter requests.
+For sample urls see <a href="https://github.com/gost/docs/blob/master/gost_queryoptions.md">gost_queryoptions.md</a> (for selection, ordering, pagination options) and <a href="https://github.com/gost/docs/blob/master/gost_filtering.md">gost_filtering.md</a> (for logical, arithmic, grouping, string, date and geospatial functions).
 
 A sample filter requests looks like this:
 
