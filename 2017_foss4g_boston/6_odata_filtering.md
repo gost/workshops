@@ -23,7 +23,7 @@ Construct and test a query to get all observations with result value bigger than
 
 Construct and test a query to get all datastreams where name ends with 'datastream'
 
-## GeoSpatial
+## Geospatial
 
 Construct and test a query to get all locations in Iceland (-25 63,-25 66,-12 66,-12 63,-25 63) using geo.intersects.
 
