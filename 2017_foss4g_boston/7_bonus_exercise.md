@@ -5,6 +5,7 @@ where are bikes available?
 
 Station information: https://gbfs.thehubway.com/gbfs/en/station_information.json
 Availablility per station: https://gbfs.thehubway.com/gbfs/en/station_status.json
+
 Stations near workshop: 
 
 * [99]  Harvard University’s Center for Geographic Analysis (CGA). id: 110 
@@ -32,6 +33,7 @@ observations per bike station.
 
 Create a map (OpenLayers or Leaflet) with real-time bike station information.
 
+For instance you can use the javascript MQTT library Paho by eclipse to retrieve the location information from Gost, see also https://github.com/gost/docs/blob/master/gost_mqtt_getting_started.md
 
 
 
