@@ -3,7 +3,8 @@
 Exercise: Real-time mapping Boston bike stations with GOST - 
 where are bikes available? 
 
-source: https://gbfs.thehubway.com/gbfs/en/station_status.json
+Station information: https://gbfs.thehubway.com/gbfs/en/station_information.json
+Availablility per station: https://gbfs.thehubway.com/gbfs/en/station_status.json
 
 Tasks:
 
