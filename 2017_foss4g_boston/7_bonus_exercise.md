@@ -5,6 +5,17 @@ where are bikes available?
 
 Station information: https://gbfs.thehubway.com/gbfs/en/station_information.json
 Availablility per station: https://gbfs.thehubway.com/gbfs/en/station_status.json
+Stations near workshop: 
+
+* [99]  Harvard University’s Center for Geographic Analysis (CGA). id: 110 
+* [187] Verizon Innovation Hub 10 Ware Street. id: 221
+* [86]  Cambridge Main Library at Broadway / Trowbridge St. id: 96
+
+Stations near venue:
+* [26]  Seaport Hotel - Congress St at Seaport Ln. id: 31
+* [57]  Boston Convention and Exhibition Center - Summer St at West Side Dr. id: 65
+* [158] Congress St at Northern Ave. id: 186
+
 
 Tasks:
 
