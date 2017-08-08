@@ -25,7 +25,7 @@ Construct and test a query to get all datastreams where name ends with 'datastre
 
 ## Geospatial
 
-Construct and test a query to get all locations in Iceland (-25 63,-25 66,-12 66,-12 63,-25 63) using geo.intersects.
+Construct and test a query to get all locations in Boston (-72 42, -72 43, -70 43, -70 42, -72 42) using geo.intersects.
 
 ## Date
 
