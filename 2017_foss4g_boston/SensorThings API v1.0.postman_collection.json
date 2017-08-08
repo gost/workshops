@@ -1,13 +1,13 @@
 {
-	"id": "99a4268d-72ce-deb3-b376-502e9c61d7c9",
+	"id": "b9f2175a-237a-4696-8b1a-f7ab984f3810",
 	"name": "SensorThings API v1.0",
 	"description": "",
 	"order": [
-		"d99d6cb9-bf79-ada1-3e29-02b32459474a",
-		"902c6191-f311-83a8-f083-d1a2402ebf5b",
-		"71cc6f57-3c44-631e-d0e1-6ebd504cfc48",
-		"24320388-284d-8df3-6c05-01f07bbde75b",
-		"8045c7e4-40d0-785c-06fa-2a3950ef7961"
+		"6bf2578c-3e5c-2cf8-62a7-96c9a88649c6",
+		"ca6e08fa-f9bf-23e0-29e7-c08cf65ba403",
+		"530e4fe3-02d5-a670-639c-ca6c69e5966c",
+		"55780d7e-e970-02fd-a0f4-93a236e71136",
+		"e4363bca-e653-9f27-d735-99390fd8e3d9"
 	],
 	"folders": [],
 	"timestamp": 1446856061486,
@@ -16,31 +16,21 @@
 	"hasRequests": true,
 	"requests": [
 		{
-			"id": "24320388-284d-8df3-6c05-01f07bbde75b",
+			"id": "530e4fe3-02d5-a670-639c-ca6c69e5966c",
 			"headers": "Content-Type: application/json\n",
-			"url": "http://localhost:8080/v1.0/Datastreams",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1495095680971,
-			"name": "Step 4: POST an new Datastream",
-			"description": "* Step 4: CREATE a new Datastream by linking to the newly created (or existing) Sensor and ObservedProperty\n\n",
-			"collectionId": "99a4268d-72ce-deb3-b376-502e9c61d7c9",
-			"responses": [],
-			"rawModeData": "{\n  \"name\": \"background radiation datastream\",\n  \"unitOfMeasurement\": {\n    \"name\": \"degree Celsius\",\n    \"symbol\": \"°C\",\n    \"definition\": \"http://dbpedia.org/page/Celsius\"\n  },\n  \"Thing\": {\n    \"@iot.id\": <id_of_the_Thing_you_just_created>\n  },\n  \"description\": \"This is a datastream for measuring the background radiation.\",\n  \"Sensor\": {\n    \"@iot.id\": <id_of_the_Sensor_you_just_created>\n  },\n  \"ObservedProperty\": {\n    \"@iot.id\": <id_of_the_Observedproperty_you_just_created>\n  },\n  \"observationType\": \"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement\"\n}"
-		},
-		{
-			"id": "71cc6f57-3c44-631e-d0e1-6ebd504cfc48",
-			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
 			"url": "http://localhost:8080/v1.0/Sensors",
+			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
+			"pathVariableData": [],
 			"method": "POST",
 			"data": [],
 			"dataMode": "raw",
@@ -48,19 +38,29 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1495095678388,
+			"time": 1502205013921,
 			"name": "Step 3: POST a Sensor",
 			"description": "",
-			"collectionId": "99a4268d-72ce-deb3-b376-502e9c61d7c9",
+			"collectionId": "b9f2175a-237a-4696-8b1a-f7ab984f3810",
 			"responses": [],
-			"rawModeData": "{\n  \"name\":\"temperature sensor\",\n  \"encodingType\": \"application/pdf\",\n  \"metadata\": \"a temperature sensor used by a weather station.\",\n  \"description\": \"a temperature sensor used by a weather station.\"\n}"
+			"rawModeData": "{\n  \"name\":\"num_bikes_available\",\n  \"encodingType\": \"application/pdf\",\n  \"metadata\": \"Number of bikes available\",\n  \"description\": \"Number of bikes available\"\n}"
 		},
 		{
-			"id": "8045c7e4-40d0-785c-06fa-2a3950ef7961",
+			"id": "55780d7e-e970-02fd-a0f4-93a236e71136",
 			"headers": "Content-Type: application/json\n",
-			"url": "http://localhost:8080/v1.0/Observations",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/v1.0/Datastreams",
+			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
+			"pathVariableData": [],
 			"method": "POST",
 			"data": [],
 			"dataMode": "raw",
@@ -68,39 +68,29 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1495095684165,
-			"name": "Step 5: POST an new Observation",
-			"description": "* Step 5: CREATE new Observations\nFinally, we have established all the required \"metadata\" for the observations. Now we can upload many many observations to the system.\n\\n",
-			"collectionId": "99a4268d-72ce-deb3-b376-502e9c61d7c9",
+			"time": 1502205293287,
+			"name": "Step 4: POST an new Datastream",
+			"description": "* Step 4: CREATE a new Datastream by linking to the newly created (or existing) Sensor and ObservedProperty\n\n",
+			"collectionId": "b9f2175a-237a-4696-8b1a-f7ab984f3810",
 			"responses": [],
-			"rawModeData": "{\n  \"result\": 1,\n  \"Datastream\": {\n    \"@iot.id\": <id_of_the_Datastream_you_just_created>\n  }\n}"
+			"rawModeData": "{\n  \"name\": \"Number of bikes available datastream Harvard University Gund Hall at Quincy St / Kirkland S\",\n  \"unitOfMeasurement\": {\n    \"name\": \"\",\n    \"symbol\": \"\",\n    \"definition\": \"\"\n  },\n  \"Thing\": {\n    \"@iot.id\": 1\n  },\n  \"description\": \"This is a datastream for number of free bikes at Harvard University Gund Hall at Quincy St / Kirkland S\",\n  \"Sensor\": {\n    \"@iot.id\": 1\n  },\n  \"ObservedProperty\": {\n    \"@iot.id\": 1\n  },\n  \"observationType\": \"http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_CountObservation\"\n}"
 		},
 		{
-			"id": "902c6191-f311-83a8-f083-d1a2402ebf5b",
+			"id": "6bf2578c-3e5c-2cf8-62a7-96c9a88649c6",
 			"headers": "Content-Type: application/json\n",
-			"url": "http://localhost:8080/v1.0/ObservedProperties",
-			"preRequestScript": "",
-			"pathVariables": {},
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"version": 2,
-			"tests": "",
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1495095671149,
-			"name": "Step 2: POST an ObservedProperty",
-			"description": "Step 2.a: \n\n* CREATE an ObservedProperty instance (when the observed property doesn't existing in the system) \n* If no existing ObservedProperty, create an ObservedProperty entity instance by POST the following JSON to the server. \n* An ObservedProperty describes what is the phenomenon a datastream is measuring. And once an ObservedProperty is created, it SHALL be reused by other Datastreams that measuring the same phenomenon. In this example, we use the definition from DBPedia. Note that different domain application might have different definition though.\n\n",
-			"collectionId": "99a4268d-72ce-deb3-b376-502e9c61d7c9",
-			"responses": [],
-			"rawModeData": "\n{\n  \"name\": \"Temperature\",\n  \"description\": \"A temperature is a numerical measure of hot and cold. Its measurement is by detection of heat radiation or particle velocity or kinetic energy, or by the bulk behavior of a thermometric material.\",\n  \"definition\": \"http://dbpedia.org/page/Temperature\"\n}\n"
-		},
-		{
-			"id": "d99d6cb9-bf79-ada1-3e29-02b32459474a",
-			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
 			"url": "http://localhost:8080/v1.0/Things",
+			"queryParams": [],
 			"preRequestScript": "",
 			"pathVariables": {},
+			"pathVariableData": [],
 			"method": "POST",
 			"data": [],
 			"dataMode": "raw",
@@ -108,12 +98,72 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1495095675524,
+			"time": 1502204368721,
 			"name": "Step 1: POST a Thing",
 			"description": "Step 1: \nCREATE a Thing entity instance as well as the Thing's Location. \n\nIn this case, a weather station is modelled as a Thing in the SensorThings API data model.  The Icelandic Weather Office (example station) provides excellent data description and we can easily convert the table into the following SensorThings API JSON.\n\n",
-			"collectionId": "99a4268d-72ce-deb3-b376-502e9c61d7c9",
+			"collectionId": "b9f2175a-237a-4696-8b1a-f7ab984f3810",
 			"responses": [],
-			"rawModeData": "{\n  \"name\": \"Akureyri\",\t\n  \"description\": \"Akureyri Weather Station, Icelandic Met Office\",\n  \"properties\": {\n    \"name\": \"Akureyri\",\n    \"type\": \"manned synoptic station\",\n    \"station number\": \"422\",\n    \"wmo number\": \"4063\",\n    \"abbreviation\": \"ak\",\n    \"forecast region\": \"North East(na)\",\n    \"height above sea-level\": \"23.0 a.s.l.\",\n    \"beignning of weather observations\": \"1881\",\n    \"station owned by\": \"Veðurstofa Íslands\"\n  },\n  \"Locations\": [\n    {\n      \"name\": \"Akureyri Weather Station\",\n      \"encodingType\": \"application/vnd.geo+json\",\n      \"description\": \"Akureyri Weather Station, Icelandic Met Office\",\n      \"location\": {\"coordinates\":[-18.1002,65.6856],\"type\":\"Point\"}\n    }\n  ]\n}"
+			"rawModeData": "{\n  \"name\": \"Bikestation Harvard University Gund Hall at Quincy St / Kirkland S\",\t\n  \"description\": \"Bike station Harvard University Gund Hall at Quincy St / Kirkland S\",\n  \"properties\": {\n    \"station_id\": \"110\",\n    \"short_name\": \"M32021\",\n    \"region_id\": \"8\",\n    \"capacity\": \"15\"\n  },\n  \"Locations\": [\n    {\n      \"name\": \"Bikestation Harvard University Gund Hall at Quincy St / Kirkland S\",\n      \"encodingType\": \"application/vnd.geo+json\",\n      \"description\": \"Bikestation Harvard University Gund Hall at Quincy St / Kirkland S\",\n      \"location\": {\"coordinates\":[-71.114025,42.376369],\"type\":\"Point\"}\n    }\n  ]\n}"
+		},
+		{
+			"id": "ca6e08fa-f9bf-23e0-29e7-c08cf65ba403",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/v1.0/ObservedProperties",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1502204925368,
+			"name": "Step 2: POST an ObservedProperty",
+			"description": "Step 2.a: \n\n* CREATE an ObservedProperty instance (when the observed property doesn't existing in the system) \n* If no existing ObservedProperty, create an ObservedProperty entity instance by POST the following JSON to the server. \n* An ObservedProperty describes what is the phenomenon a datastream is measuring. And once an ObservedProperty is created, it SHALL be reused by other Datastreams that measuring the same phenomenon. In this example, we use the definition from DBPedia. Note that different domain application might have different definition though.\n\n",
+			"collectionId": "b9f2175a-237a-4696-8b1a-f7ab984f3810",
+			"responses": [],
+			"rawModeData": "\n{\n  \"name\": \"Number of bikes\",\n  \"description\": \"Number of bikes\",\n  \"definition\": \"https://en.wikipedia.org/wiki/Bicycle\"\n}\n"
+		},
+		{
+			"id": "e4363bca-e653-9f27-d735-99390fd8e3d9",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/v1.0/Observations",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1502205431679,
+			"name": "Step 5: POST an new Observation",
+			"description": "* Step 5: CREATE new Observations\nFinally, we have established all the required \"metadata\" for the observations. Now we can upload many many observations to the system.\n\\n",
+			"collectionId": "b9f2175a-237a-4696-8b1a-f7ab984f3810",
+			"responses": [],
+			"rawModeData": "{\n  \"result\": 1,\n  \"Datastream\": {\n    \"@iot.id\": id_of_the_entity_you_just_created\n  }\n}"
 		}
 	]
 }
