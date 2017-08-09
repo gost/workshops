@@ -4,7 +4,7 @@
 
 Node-RED is also installed in the first exercise and should run on http://localhost:1880 
 
-In this exercise, we'll request an online feed about Boston bike stations (https://gbfs.thehubway.com/gbfs/en/station_status.json). Using Node-RED we'll process the information (get the number of free bikes in a station) and send a new observation to GOST using the HTTP protocol.
+In this exercise, we'll request an online feed about Boston bike stations (https://gbfs.thehubway.com/gbfs/en/station_status.json). Using Node-RED we'll process the information (get the number of available bikes in a station) and send a new observation to GOST using the HTTP protocol.
 
 The complete flow will look like this:
 
