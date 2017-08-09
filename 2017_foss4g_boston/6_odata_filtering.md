@@ -17,11 +17,11 @@ The part after the $filter contains the OData query
 
 ## Exercise Logical filter
 
-Construct and test a query to get all observations with result value bigger than 10.
+Construct and test a query to get all observations with result value bigger or equal than 1.
 
 ## Exercise String filter
 
-Construct and test a query to get all datastreams where name ends with 'datastream'
+Construct and test a query to get all datastreams where name starts with 'Number'
 
 ## Geospatial
 
@@ -29,7 +29,7 @@ Construct and test a query to get all locations in Boston (-72 42, -72 43, -70 4
 
 ## Date
 
-Construct and test a query to get all observations where phenomenonTime is in the future (using now() function)
+Construct and test a query to get all observations where phenomenonTime is in month August
 
 
 Continue to <a href = "7_bonus_exercise.md">7) Bonus exercise</a>
