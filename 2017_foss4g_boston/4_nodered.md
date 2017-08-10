@@ -4,7 +4,7 @@
 
 Node-RED is also installed in the first exercise and should run on http://localhost:1880 
 
-In this exercise, we'll request an online feed about Boston bike stations (https://gbfs.thehubway.com/gbfs/en/station_status.json). Using Node-RED we'll process the information (get the number of free bikes in a station) and send a new observation to GOST using the HTTP protocol.
+In this exercise, we'll request an online feed about Boston bike stations (https://gbfs.thehubway.com/gbfs/en/station_status.json). Using Node-RED we'll process the information (get the number of available bikes in a station) and send a new observation to GOST using the HTTP protocol.
 
 The complete flow will look like this:
 
@@ -36,22 +36,22 @@ Return: A parsed JSON object
 
 <kbd><img src= "images/nodered_bikes.png"></kbd>
 
-3] Get available bikes of first station
+3] Get available bikes of the nearby station (station_id=110)
 
 Type of Node: Function 
 
 Code: 
 
 ```
-var bikes_available = msg.payload.data.stations[0].num_bikes_available;
-var newMessage =  { payload: {  "result": bikes_available, "Datastream": {
-    "@iot.id": 1
-  } } 
-};
-newMessage.headers = {
-         "Content-type" : "application/json"
-    
+function getStation(station) { 
+    return station.station_id === '110';
 }
+
+var harvard_station = msg.payload.data.stations.find(getStation);
+var bikes_available = harvard_station.num_bikes_available;
+
+var newMessage =  { payload: {  "result": bikes_available, "Datastream": {"@iot.id": 1}} };
+newMessage.headers = {"Content-type" : "application/json"}
 return newMessage;
 ```
 
