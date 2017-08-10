@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Now that GOST is installed let's configure GOST with some metadata about our sensors. In this exercise we'll configure GOST for storing information about the number of available bikes in the bikestation near Harvard University.
+Now that GOST is installed let's configure GOST with some metadata about our sensors. In this exercise we'll configure GOST for storing information about the number of available bikes in the bikestation near Harvard University (station_id=110).
 
 ## Prerequisites
 
