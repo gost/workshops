@@ -79,7 +79,9 @@ When the model is finished, click the 'Deploy' button (upper right) and run the 
 
 If all goes well, new observations are created in GOST. Inspect http://localhost:8080/v1.0/Observations to check it.
 
-Bonus exercise: Change the model so that every time interval (like 10 seconds) new information is retrieved and send to GOST (polling method).  
+### Bonus exercise 
+
+Change the model so that every time interval (like 10 seconds) new information is retrieved and send to GOST (polling method).  
 
 Continue to <a href = "5_mqtt.md">5) GOST and MQTT</a>
 
