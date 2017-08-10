@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script src="node_modules/paho-mqtt/mqttws31-min.js" type="text/javascript"></script>
+        <style type="text/css">
+            #mapid { height: 600px; }
+        </style>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css" />
+    </head>
+    <body>
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
+        <div id="mapid"></div>
+        <script>
+            // initialize map
+            var mymap = L.map('mapid').setView([42.354944,-71.066038], 13);
+            var OpenStreetMap_Mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(mymap);
+            
+            // initialize mqtt
+            client = new Paho.MQTT.Client("localhost", Number(9001), 'hoha');
+            client.onMessageArrived = onMessageArrived;
+            client.connect({ onSuccess: onConnect });
+
+            function onConnect() {
+                // todo: subscribe to multiple streams
+                client.subscribe("Datastreams(1)/Observations");
+            }
+
+            // called when a message arrives
+            function onMessageArrived(message) {
+                var obj = JSON.parse(message.payloadString);
+
+                // boston bikestation hardcoded location for now...
+                // todo: add request to get location of bikestation from GOST
+                var lon = -71.114025;
+                var lat = 42.376369;
+
+                // todo: cleanup markers...
+                var marker = L.marker([lat, lon]).addTo(mymap);
+                marker.bindPopup("Available bikes:" + obj.result).openPopup();
+            }
+        </script>
+    </body>
+</html>
