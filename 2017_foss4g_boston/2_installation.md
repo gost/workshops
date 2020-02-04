@@ -31,13 +31,18 @@ If you are unable to install Docker, you can try the free online service <a href
 
 ## Installation
 
-Installation of GOST is easy: download the <a href = "https://raw.githubusercontent.com/gost/docker-compose/master/docker-compose-0.5.yml">docker-compose.yml</a> file and run it with 'docker-compose up'.
+Installation of GOST is easy: download the <a href = "https://raw.githubusercontent.com/gost/docker-compose/master/docker-compose.yml">docker-compose.yml</a> file and run it with 'docker-compose up'.
 
 Note: The first time the 'docker-compose up' command is executed, a bunch of new Docker images will be downloaded and started so please be patient.
 
 ```
+Linux:
 $ curl https://raw.githubusercontent.com/gost/docker-compose/master/docker-compose-0.5.yml > docker-compose.yml
 $ docker-compose up
+
+Windows:
+PS Invoke-WebRequest https://raw.githubusercontent.com/gost/docker-compose/master/docker-compose.yml -UseBasicParsing | Select -ExpandProperty Content > docker-compose.yml
+PS docker-compose up
 ```
 The system is ready when log messages appear like:
 
